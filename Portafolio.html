@@ -52,7 +52,7 @@
             text-align: center;
             padding: 100px 20px;
             width: 100%; /* Ancho completo de la pantalla */
-            height: 400px; /* Altura fija */
+            height: 100%; /* Altura fija */
             display: flex; /* Centra el contenido */
             justify-content: center;
             align-items: center;
@@ -137,7 +137,7 @@
         justify-content: center; /* Centra las columnas dentro de la fila */
     }
 
-    #destinos .col-md-4 {
+    #destinos .col-md-3 {
         max-width: 400px; /* Limita el ancho de las columnas */
         flex: 0 0 auto; /* Ajusta el comportamiento del flexbox */
     }
@@ -160,18 +160,20 @@
 
         .image-container img {
             width: 100%;
-            height: 300px;
+            height: 200px;
             display: block;  /* Asegura que la imagen ocupe todo el espacio */
         }
 
         .text-overlay {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);  /* Centra el texto en la imagen */
             color: white;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);  /* Fondo semitransparente para mejorar la visibilidad del texto */
+            /*background-color: rgba(0, 0, 0, 0.5);  /* Fondo semitransparente para mejorar la visibilidad del texto */
             padding: 10px;
             width: 90%;  /* Limita el ancho del texto */
         }
